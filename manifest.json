@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Art Thumbnail Enhancer (TATE)",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
