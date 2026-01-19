@@ -36,3 +36,8 @@ article[data-x-vertical="on"][data-x-gap="0"]
   gap: 0px !important;
   padding-bottom: 0px;
 }
+
+.x-vertical-toggle,
+.x-gap-toggle {
+  color: rgb(29, 155, 240);
+}

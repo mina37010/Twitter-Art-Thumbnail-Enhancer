@@ -6,7 +6,7 @@ const ROW_SELECTOR =
   'div.css-175oi2r.r-zl2h9q.r-1iusvr4.r-16y2uox.r-18u37iz,' +
   'div.css-175oi2r.r-1iusvr4.r-16y2uox.r-18u37iz';
 const BG_SELECTOR = '.r-1niwhzg';
-const MEDIA_CONTAINER_CLASS = 'div.r-1kqtdi0';
+// const MEDIA_CONTAINER_CLASS = 'div.r-1kqtdi0';
 
 // =========================
 // DOM 取得ユーティリティ
@@ -27,8 +27,7 @@ function getMediaContainer(article) {
 }
 
 function getPhotos(article) {
-  const container = getMediaContainer(article);
-  return container ? [...container.querySelectorAll(PHOTO_SELECTOR)] : [];
+  return [...article.querySelectorAll(PHOTO_SELECTOR)];
 }
 
 function getRows(article) {
